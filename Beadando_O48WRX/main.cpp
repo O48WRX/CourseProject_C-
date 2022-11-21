@@ -1,9 +1,10 @@
 #include <iostream>
+#include "Person.cpp"
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    Person p = new Person();
     return 0;
 }
