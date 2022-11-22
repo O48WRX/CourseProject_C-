@@ -4,13 +4,30 @@
 
 using namespace std;
 
+void sayHello() {
+    cout << "Hello" << endl;
+}
+
+int return1() {
+    return 1;
+}
+
 int main()
 {
     cout << "Person osztály" << endl;
     Person p = Person("Teszt", "Elek", 19, 1500);
     p.print();
     cout<< "********************************" << endl;
-    cout << "int pointerezés" << endl;
+    cout << "Pointerek" << endl;
+
+    const int  cint = 12;
+    int const *ptr1 = &cint;
+    int const * const cptr = &cint;
+
+    cout <<  "Konstans int: " <<cint<< endl;
+
+    cout<< "Pointer: " <<  *ptr1 << endl;
+    cout << "Konstans pointer: " << *cptr << endl;
 
     int n1 = 5;
     int n2 = 3;
@@ -55,6 +72,14 @@ int main()
         }
         whileCycle--;
     } while (cycleBool);
+
+    cout << "*********************************************" << endl;
+    cout << "Fuggvenyek" << endl;
+
+    sayHello();
+
+    cout << endl;
+    cout << return1() << endl;
 
     return 0;
 }
