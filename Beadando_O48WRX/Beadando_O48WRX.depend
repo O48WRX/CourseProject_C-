@@ -1,11 +1,17 @@
 # depslib dependency file v1.0
-1669128277 source:c:\users\kardy\desktop\projects\beadando_c++_o48wrx\beadando_o48wrx\main.cpp
+1669131210 source:c:\users\kardy\desktop\projects\beadando_c++_o48wrx\beadando_o48wrx\main.cpp
 	<iostream>
 	"Person.cpp"
+	"book.cpp"
 
-1669128243 c:\users\kardy\desktop\projects\beadando_c++_o48wrx\beadando_o48wrx\person.cpp
+1669128684 c:\users\kardy\desktop\projects\beadando_c++_o48wrx\beadando_o48wrx\person.cpp
 	"Person.h"
 
-1669127765 c:\users\kardy\desktop\projects\beadando_c++_o48wrx\beadando_o48wrx\person.h
+1669128504 c:\users\kardy\desktop\projects\beadando_c++_o48wrx\beadando_o48wrx\person.h
 	<string>
+
+1669130859 c:\users\kardy\desktop\projects\beadando_c++_o48wrx\beadando_o48wrx\book.cpp
+	"book.hpp"
+
+1669130353 c:\users\kardy\desktop\projects\beadando_c++_o48wrx\beadando_o48wrx\book.hpp
 
