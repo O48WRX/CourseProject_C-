@@ -11,6 +11,7 @@ private:
     int salary;
 
 public:
+    ~Person();
     Person()
         : firstName{""}, lastName{""}, age{0}, salary{0} {}
     Person(std::string firstname, std::string lastname, int agenum, int salarynum)
@@ -25,6 +26,8 @@ public:
     void setAge(int agenumber);
     int getSalary();
     void setSalary(int salarynumber);
+
+    void print();
 
 };
 

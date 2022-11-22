@@ -1,4 +1,11 @@
 # depslib dependency file v1.0
-1584205420 source:c:\users\kardy\desktop\projects\beadando_c++_o48wrx\beadando_o48wrx\main.cpp
+1669128277 source:c:\users\kardy\desktop\projects\beadando_c++_o48wrx\beadando_o48wrx\main.cpp
 	<iostream>
+	"Person.cpp"
+
+1669128243 c:\users\kardy\desktop\projects\beadando_c++_o48wrx\beadando_o48wrx\person.cpp
+	"Person.h"
+
+1669127765 c:\users\kardy\desktop\projects\beadando_c++_o48wrx\beadando_o48wrx\person.h
+	<string>
 

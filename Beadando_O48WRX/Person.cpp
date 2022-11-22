@@ -4,6 +4,10 @@ int Person::getAge() {
     return age;
 }
 
+Person::~Person() {
+    std::cout << "Destruktor hasznalva" << std::endl;
+}
+
 std::string Person::getFirstName() {
     return firstName;
 }
@@ -39,4 +43,8 @@ void Person::setLastName(std::string lastname) {
 
 void Person::setSalary(int salarynumber) {
     salary = salarynumber;
+}
+
+void Person::print() {
+    std::cout << firstName + " " + lastName << ", " << age << ", " << salary << std::endl;
 }
