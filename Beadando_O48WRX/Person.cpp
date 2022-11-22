@@ -1,41 +1,42 @@
 #include "Person.h"
 
-Person::getAge() {
+int Person::getAge() {
     return age;
 }
 
-Person::getFirstName() {
+std::string Person::getFirstName() {
     return firstName;
 }
 
-Person::getLastName() {
+std::string Person::getLastName() {
     return lastName;
 }
 
-Person::getName() {
+std::string Person::getName() {
     return firstName + " " + lastName;
 }
 
-Person::getSalary() {
+int Person::getSalary() {
     return salary;
 }
 
-Person::setName(string fullname) {
-    name = fullname;
+void Person::setName(std::string fullname) {
+    Person::setFirstName(fullname.substr(0, fullname.find(" ")));
+    Person::setLastName(fullname.substr(1, fullname.find(" ")));
 }
 
-Person::setAge(int agenumber) {
+void Person::setAge(int agenumber) {
     age = agenumber;
 }
 
-Person::setFirstName(string firstname) {
+void Person::setFirstName(std::string firstname) {
     firstName = firstname;
 }
 
-Person::setLastName(string lastname) {
+void Person::setLastName(std::string lastname) {
     lastName = lastname;
 }
 
-Person::setSalary(int salarynumber) {
+void Person::setSalary(int salarynumber) {
     salary = salarynumber;
 }

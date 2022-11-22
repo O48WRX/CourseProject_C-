@@ -11,9 +11,10 @@ private:
     int salary;
 
 public:
-    Person() {}
-    Person(std::string firstname, std::string lastname, int age, int salary) {};
-    Person(std::string name, int age, int salary) {};
+    Person()
+        : firstName{""}, lastName{""}, age{0}, salary{0} {}
+    Person(std::string firstname, std::string lastname, int agenum, int salarynum)
+        : firstName{firstname}, lastName{lastname}, age{agenum}, salary{salarynum} {};
     std::string getName();
     void setName(std::string fullname);
     std::string getFirstName();
