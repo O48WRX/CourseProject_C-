@@ -12,9 +12,14 @@ int return1() {
     return 1;
 }
 
+void powerOf2(int * number) {
+    int tempnum = *number * *number;
+    *number = tempnum;
+}
+
 int main()
 {
-    cout << "Person osztály" << endl;
+    cout << "Person osztaly" << endl;
     Person p = Person("Teszt", "Elek", 19, 1500);
     p.print();
     cout<< "********************************" << endl;
@@ -77,6 +82,11 @@ int main()
     cout << "Fuggvenyek" << endl;
 
     sayHello();
+    int testnum = 5;
+    int * testpointer = &testnum;
+    powerOf2(testpointer);
+    cout << "Fuggveny valtoztatott ertek: " << *testpointer << endl;
+
 
     cout << endl;
     cout << return1() << endl;
